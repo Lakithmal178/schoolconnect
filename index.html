@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1565c0" />
+  <title>SchoolConnect</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="main-header">SchoolConnect</header>
+  <nav class="main-nav">
+    <a href="#home" class="nav-link active" data-section="home">Home</a>
+    <a href="#about" class="nav-link" data-section="about">About</a>
+    <a href="#notices" class="nav-link" data-section="notices">Notices</a>
+    <a href="#events" class="nav-link" data-section="events">Events</a>
+    <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+  </nav>
+
+  <section class="section page-section active" id="home">
+    <h2>Welcome to SchoolConnect</h2>
+    <p>Your modern portal for school updates, notices, and events—all in one place.</p>
+    <p>
+      Dharmaraja College is dedicated to fostering academic excellence, leadership skills, and community values. With over 130 years of history, our school is a beacon of education in Kandy and Sri Lanka.
+    </p>
+    <p>
+      Explore the latest announcements, upcoming events, and ways to connect with us here. Stay informed and engaged with everything happening at our school community.
+    </p>
+    <div class="btn-container">
+      <a href="#about" class="btn" data-section="about">Learn More</a>
+    </div>
+
+    <div class="quick-facts">
+      <div class="fact">🏫 Over 130 Years of Excellence</div>
+      <div class="fact">🎓 3000+ Active Students</div>
+      <div class="fact">🏆 Top Academic Results in Kandy</div>
+      <div class="fact">🌍 Eco-Friendly Campus Initiatives</div>
+      <div class="fact">🎨 Award-Winning Arts and Music Programs</div>
+    </div>
+  </section>
+
+  <section class="section page-section" id="about">
+    <h2>About Our School</h2>
+    <div class="about-content">
+      <p>
+        Dharmaraja College, established in 1887 in Kandy, Sri Lanka, is renowned for combining traditional Buddhist values with modern education to nurture well-rounded individuals. The school emphasizes discipline, leadership, and academic success.
+      </p>
+      <p>
+        Our curriculum integrates science, arts, and technology, supported by experienced teachers and state-of-the-art facilities. We are committed to encouraging students to excel in all spheres of life.
+      </p>
+
+      <h3>Our Mission</h3>
+      <p>
+        To empower students with knowledge, ethical values, and skills to become responsible global citizens.
+      </p>
+
+      <h3>Our Vision</h3>
+      <p>
+        To be a leading institution in education that inspires innovation, compassion, and lifelong learning.
+      </p>
+
+      <h3>Leadership Team</h3>
+      <ul>
+        <li><strong>Principal:</strong> Mr. Kamal Ariyasinghe</li>
+        <li><strong>Vice Principal:</strong> Reg. Galagedara Gnaninda Thero</li>
+        <li><strong>Head of Science Department:</strong> Ms. Chandima Ranathunga</li>
+        <li><strong>Head of Arts Department:</strong> Mr. Nishan Perera</li>
+        <li><strong>Sports Coordinator:</strong> Ms. Malsha Fernando</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section page-section" id="notices">
+    <h2>Latest Notices</h2>
+    <div class="card-grid">
+      <div class="card" onclick="toggleDetails(this)">
+        <h3>New Library Timings</h3>
+        <p>Library now open 8AM – 5PM on weekdays.</p>
+        <p hidden>Includes 150+ new science, fiction, and resource titles available for borrowing.</p>
+      </div>
+      <div class="card" onclick="toggleDetails(this)">
+        <h3>Midterm Exam Schedule</h3>
+        <p>Exams begin July 15. Check noticeboard or website.</p>
+        <p hidden>Be 15 minutes early. Results will be published in the second week of August.</p>
+      </div>
+      <div class="card" onclick="toggleDetails(this)">
+        <h3>Uniform Inspection</h3>
+        <p>Weekly inspection starts this Monday.</p>
+        <p hidden>Ensure your tie, badge, and shoes meet the school dress code.</p>
+      </div>
+      <div class="card" onclick="toggleDetails(this)">
+        <h3>Parent-Teacher Meetings</h3>
+        <p>Scheduled for August 5–7. Appointment booking required.</p>
+        <p hidden>Contact your class teacher to book your slot.</p>
+      </div>
+      <div class="card" onclick="toggleDetails(this)">
+        <h3>Science Lab Renovation</h3>
+        <p>Closed from July 20 to August 10 for upgrades.</p>
+        <p hidden>New equipment arriving includes microscopes, 3D printers, and interactive whiteboards.</p>
+      </div>
+      <div class="card" onclick="toggleDetails(this)">
+        <h3>Sports Team Trials</h3>
+        <p>Trials for the football and cricket teams start next week.</p>
+        <p hidden>Open to all students in grades 7–13. Registration at the sports office.</p>
+      </div>
+      <div class="card" onclick="toggleDetails(this)">
+        <h3>Covid-19 Safety Guidelines</h3>
+        <p>Mask wearing mandatory in all indoor spaces.</p>
+        <p hidden>Please follow updated hygiene protocols posted across campus.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section page-section" id="events">
+    <h2>Upcoming Events</h2>
+    <div class="card-grid">
+      <div class="card" onclick="toggleDetails(this)">
+        <h3>Sports Day</h3>
+        <p>August 10 | Main Playground</p>
+        <p hidden>Participation is compulsory for Grades 6–13. Chief Guest: Olympic medalist Ms. Jayani.</p>
+      </div>
+      <div class="card" onclick="toggleDetails(this)">
+        <h3>Science Fair</h3>
+        <p>Sept 14–15 | Auditorium</p>
+        <p hidden>Includes robotics demo, inter-school exhibits, and NASA engineer keynote.</p>
+      </div>
+      <div class="card" onclick="toggleDetails(this)">
+        <h3>Prefects' Investiture</h3>
+        <p>August 28 | Main Hall</p>
+        <p hidden>Awarding student leadership positions. Parents are invited.</p>
+      </div>
+      <div class="card" onclick="toggleDetails(this)">
+        <h3>Art & Music Festival</h3>
+        <p>October 3–4 | School Auditorium</p>
+        <p hidden>Featuring student performances, exhibitions, and guest artists.</p>
+      </div>
+      <div class="card" onclick="toggleDetails(this)">
+        <h3>Annual Cultural Day</h3>
+        <p>November 20 | School Grounds</p>
+        <p hidden>Celebrate diverse cultures with food, dance, and drama performances.</p>
+      </div>
+      <div class="card" onclick="toggleDetails(this)">
+        <h3>Alumni Reunion</h3>
+        <p>December 15 | School Banquet Hall</p>
+        <p hidden>Open invitation to all former students. RSVP required.</p>
+      </div>
+      <div class="card" onclick="toggleDetails(this)">
+        <h3>Environmental Awareness Week</h3>
+        <p>June 1–7 | Campus-wide</p>
+        <p hidden>Workshops, tree planting, and sustainability projects throughout the week.</p>
+      </div>
+      <div class="card" onclick="toggleDetails(this)">
+        <h3>Inter-School Debate Competition</h3>
+        <p>July 25 | Main Hall</p>
+        <p hidden>Competing schools from across the district. Open to spectators.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section page-section" id="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/myzjjyyk" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button class="send-btn" type="submit">Send Message</button>
+    </form>
+    <h3>Find Us</h3>
+    <p>Dharmaraja College, Kandy, Sri Lanka</p>
+    <p><strong>Phone:</strong> +94 81 222 1234</p>
+    <p><strong>Email:</strong> info@dharmarajacollege.lk</p>
+    <p>
+      <strong>Follow us:</strong>
+      <a href="https://facebook.com/DharmarajaCollege" target="_blank" rel="noopener noreferrer">Facebook</a> |
+      <a href="https://twitter.com/DharmarajaCol" target="_blank" rel="noopener noreferrer">Twitter</a> |
+      <a href="https://instagram.com/DharmarajaCollege" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </p>
+    <iframe
+      src="https://www.google.com/maps?q=Dharmaraja+College+Kandy&output=embed"
+      width="100%"
+      height="300"
+      frameborder="0"
+      style="border:0; margin-top: 1rem;"
+      allowfullscreen
+      loading="lazy"
+    ></iframe>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
